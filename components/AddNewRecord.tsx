@@ -237,8 +237,8 @@ const AddRecord = () => {
               </span>
             </label>
             <div className='relative'>
-              <span className='absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 font-medium text-sm'>
-                Rs.
+              <span className='absolute left-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 font-medium text-sm'>
+                Rs
               </span>
               <input
                 type='number'

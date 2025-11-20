@@ -170,7 +170,7 @@ const BarChart = ({ records }: { records: Record[] }) => {
               item.categories.length > 1
                 ? `Categories: ${item.categories.join(', ')}`
                 : `Category: ${item.categories[0]}`;
-            return [`Total: $${item.amount.toFixed(2)}`, categoriesText];
+            return [`Total: Rs.${item.amount.toFixed(2)}`, categoriesText];
           },
         },
       },
@@ -214,7 +214,7 @@ const BarChart = ({ records }: { records: Record[] }) => {
           },
           color: isDark ? '#9ca3af' : '#7f8c8d', // Gray y-axis labels
           callback: function (value: string | number) {
-            return '$' + value; // Add dollar sign to y-axis labels
+            return 'Rs.' + value; // Add dollar sign to y-axis labels
           },
         },
         grid: {
